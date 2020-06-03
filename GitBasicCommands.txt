@@ -23,8 +23,18 @@ $ git rm --cached <file>
 
 $ git status
 
-# Commit, enter comments in new window (press i to type, Esc to quit write mode
-# and wq + enter to exit window)
+# Commit, enter comments in associated editor
 $ git commit
+# Set default editor (will wait for editor to close)
+$ git config --global core.editor "atom --wait"
+
+# Commit without opening editor
+$ git commit -m 'Type comment here'
+
+
+
+
+
+
 
 modifico
