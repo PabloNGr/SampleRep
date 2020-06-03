@@ -1,0 +1,30 @@
+# Git bash commands
+
+# Create files in current directory
+$ touch file_name.file_extension
+
+# Initiate repository in current directory
+$ git init
+
+# Set user name for repository
+$ git config --global user.name 'Pablo N. Granell'
+
+# Set email for user
+$ git config --global user.email 'granellpablo@gmail.com'
+
+# Stage files (include in what will be commited)
+$ git add <file>  # add just this file
+$ git add *.html  # add all html files
+$ git add .       # add everything in the directory
+
+
+# Unstage file
+$ git rm --cached <file>
+
+$ git status
+
+# Commit, enter comments in new window (press i to type, Esc to quit write mode
+# and wq + enter to exit window)
+$ git commit
+
+modifico
