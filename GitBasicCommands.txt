@@ -16,12 +16,29 @@ $ git config --global user.email 'granellpablo@gmail.com'
 $ git add <file>  # add just this file
 $ git add *.html  # add all html files
 $ git add .       # add everything in the directory
+$ git add -A	  # another way to add everything
 
 
 # Unstage file
 $ git rm --cached <file>
 
+# Another way to unstage
+$ git reset <file>
+$ git reset		# unstage everything    
+
 $ git status
+
+$ git log
+
+# List remote repository details
+$ git remote - v
+
+# List branch details
+$ git branch -a
+
+# List changes made
+$ git diff
+
 
 # Commit, enter comments in associated editor
 $ git commit
@@ -69,6 +86,12 @@ $ git remote add origin https:// Repo_URL
 $ git push -u origin master
 # Push commits
 $ git push
+
+
+# Push commits to remote repository (from a branch)
+$ git push --set-upstream origin HEAD  # (only 1st time)
+$ git push -u origin HEAD  # test this one
+
 
 # Clone repository
 $ git clone https:// Repo_URL
