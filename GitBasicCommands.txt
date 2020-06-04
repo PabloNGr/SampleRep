@@ -31,6 +31,9 @@ $ git config --global core.editor "atom --wait"
 # Commit without opening editor
 $ git commit -m 'Type comment here'
 
+ # Commit without previously adding changes and without opening editor
+ $ git commit -a -m 'Type comment here'
+
 # Ignore files or folders for commit
 $ touch .gitignore   # Then, list files to ignore in this file
 
@@ -51,7 +54,6 @@ $ git remote add origin https:// Repo_URL
 
 # Push commits to remote repository (only first time)
 $ git push -u origin master
-
 # Push commits
 $ git push
 
