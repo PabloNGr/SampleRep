@@ -31,6 +31,35 @@ $ git config --global core.editor "atom --wait"
 # Commit without opening editor
 $ git commit -m 'Type comment here'
 
+# Ignore files or folders for commit
+$ touch .gitignore   # Then, list files to ignore in this file
+
+# Create branch
+$ git branch branch_name
+
+# Switch to branch
+$ git checkout branch_name
+
+# Merge branch to master
+$ git merge branch_name
+
+# List remote repository
+$ git remote
+
+# Add remote repository
+$ git remote add origin https:// Repo_URL
+
+# Push commits to remote repository (only first time)
+$ git push -u origin master
+
+# Push commits
+$ git push
+
+# Clone repository
+$ git clone https:// Repo_URL
+
+# Update repository (if changes were made later)
+$ git pull
 
 
 
