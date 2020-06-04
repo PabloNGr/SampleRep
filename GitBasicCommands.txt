@@ -32,7 +32,7 @@ $ git config --global core.editor "atom --wait"
 $ git commit -m 'Type comment here'
 
  # Commit without previously adding changes and without opening editor
- $ git commit -a -m 'Type comment here'
+ $ git commit -a -m 'Type comment here'  # Doesn't work for new files, add them before
 
 # Ignore files or folders for commit
 $ touch .gitignore   # Then, list files to ignore in this file
