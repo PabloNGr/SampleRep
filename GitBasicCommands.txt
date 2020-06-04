@@ -43,8 +43,21 @@ $ git branch branch_name
 # Switch to branch
 $ git checkout branch_name
 
-# Merge branch to master
-$ git merge branch_name
+
+# Two ways of merging branches (after changes have been made):
+
+# 1) Merge branch directly
+$ git commit ...         # do this in branch
+$ git checkout master
+$ git merge branch_name  # do this in master branch, then push
+
+# 2) By pull request
+$ git commit ...        # do this in branch
+$ git push              # do this in branch
+# This will make the branch appear on GitHub, a pull request should the be
+# created to merge the branch
+
+
 
 # List remote repository
 $ git remote
